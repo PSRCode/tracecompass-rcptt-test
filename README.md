@@ -14,7 +14,7 @@ Either create a symlink to a trace-compass RCP or extract one under
 
 Let's say the rcp is located inside /tmp/rcp/trace-compass.
 
-The folder tree of /tmp/rcp
+The folder tree of /tmp/rcp:
 ```
 $ tree /tmp/rcp/ -d  -L 2
 /tmp/rcp/
@@ -39,9 +39,9 @@ mvn package
 Maven will take care of all necessary dependencies and run the pre-selected test
 suites.
 
-Results will be located under ./target
+Results will be located under ./target.
 
-### CI maven run
+### CI maven run 
 #### Jenkins
 
 Test can be run on a Jenkins instance by using the pom-jenkins.xml.
@@ -49,4 +49,4 @@ Test can be run on a Jenkins instance by using the pom-jenkins.xml.
 The local Data should be placed under $WORKSPACE/Data.
 
 The trace-compass rcp (fully extracted) should be placed under
-$WORKSPACE/rcp/trace-compass and data under $WORKSPACE/Data.
+$WORKSPACE/rcp/trace-compass.
