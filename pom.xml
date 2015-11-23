@@ -29,7 +29,7 @@
 						<vmArgs> 
 							<vmArg>-Xmx1536m</vmArg>  
 							<vmArg>-XX:MaxPermSize=256m</vmArg> 
-							<vmArg>-Ddata_path=${dataPath}</vmArg> 
+							<vmArg>-DdataPath=${dataPath}</vmArg>
 						</vmArgs> 
 					</aut>
 					<runner>
