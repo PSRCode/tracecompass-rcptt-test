@@ -38,3 +38,17 @@ If you are not using the default path make sure to pass the correct arguments to
 the AUT in the run configurations.
 
 ![](http://i.imgur.com/XH02fa9.png)
+
+## Development
+
+Two main set of tests exists: static and dynamic traces based tests.
+
+Tests based on dynamic traces require that tests do not know anything about the
+trace content.
+
+Still trace place holder need to be present under data to provide a fully
+running project.
+
+Tests based on static traces can test things related to the trace content.
+Naturally traces needed for static tests must be either present under data or
+downloaded on run from a remote site.

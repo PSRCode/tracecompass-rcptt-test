@@ -1,0 +1,36 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Contexts: _hJ3OQI7-EeWIk8i4YSH9dg,_P_dMII_MEeWoZ73dvYVv8A,_AAhGYI_QEeWoZ73dvYVv8A
+Element-Name: open_trace_invalid_static_1
+Element-Type: testcase
+Element-Version: 3.0
+External-Reference: 
+Id: _CIrukJIGEeWlJ7F5c_Pz9A
+Runtime-Version: 2.0.2.201511100828
+Save-Time: 11/23/15 12:59 PM
+Testcase-Type: ecl
+Verifications: _V48iIJIIEeWlJ7F5c_Pz9A
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Content-Type: text/plain
+Entry-Name: .description
+
+Try to open an invalid trace.
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac
+Content-Type: text/ecl
+Entry-Name: .content
+
+get-view "Project Explorer" | get-tree | select "Tracing/Traces [0]" | get-menu "Import..." | click
+set-dialog-result Folder [format "%s/invalid_static_trace_1/" $data_path]
+get-window "Trace Import" | get-button "Browse..." | click
+with [get-window "Trace Import"] {
+    with [get-tree] {
+        get-item "invalid_static_trace_1" | check
+        select "invalid_static_trace_1"
+    }
+    get-button Finish | click
+}
+get-view "Project Explorer" | get-tree | select "Tracing/Traces \\[1\\]/kernel" | double-click
+get-window "Open Trace" | get-button OK | click
+------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--

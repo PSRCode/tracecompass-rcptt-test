@@ -1,0 +1,23 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Element-Name: open_trace
+Element-Type: testsuite
+Element-Version: 2.0
+Id: _3WKjAJIMEeWlJ7F5c_Pz9A
+Runtime-Version: 2.0.2.201511100828
+Save-Time: 11/23/15 1:08 PM
+
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa
+Content-Type: text/plain
+Entry-Name: .description
+
+Superset of open trace test suites.
+------=_.description-216f885c-d591-38ce-8ea2-e4f8cb4d6ffa--
+------=_testcase-items-62c497da-4241-31f4-811a-6b453a3ecff8
+Content-Type: text/testcase
+Entry-Name: testcase-items
+
+_qrCwsJILEeWlJ7F5c_Pz9A	//
+_y_4fQJIMEeWlJ7F5c_Pz9A	//
+
+------=_testcase-items-62c497da-4241-31f4-811a-6b453a3ecff8--
