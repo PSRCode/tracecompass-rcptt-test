@@ -46,7 +46,7 @@ Two main set of tests exists: static and dynamic traces based tests.
 Tests based on dynamic traces require that tests do not know anything about the
 trace content.
 
-Still trace place holder need to be present under data to provide a fully
+Trace place holder for dynamic traces need to be present under data to provide a fully
 running project.
 
 Tests based on static traces can test things related to the trace content.
