@@ -6,34 +6,23 @@ Blackbox UI test using RCPTT for Trace Compass
 You can run this project either via the RCP Testing Tool or via maven.
 
 ### Local maven run
+By default maven will look for the RCP under ./rcp/trace-compass .
 
-Either create a symlink to a trace-compass RCP or extract one under
-./rcp/trace-compass.
+This can be overridden by providing a -DauthPath="/path/to/rcp/"
 
-####Symlink creation
-
-Let's say the rcp is located inside /tmp/rcp/trace-compass.
-
-The folder tree of /tmp/rcp:
 ```
-$ tree /tmp/rcp/ -d  -L 2
-/tmp/rcp/
-└── trace-compass
-    ├── configuration
-    ├── features
-    ├── p2
-    ├── plugins
-    └── readme
+mvn package -DautPath="/tmp/rcp/trace-compass/"
 ```
 
-The corresponding symlink:
+By default maven will lokk for Data in ./Data .
+This can be overridden by providing a -DdataPath="/path/to/data/folder"
 ```
-ln -s /tmp/rcp/trace-compass ./rcp/trace-compass
+mvn package -DdataPath="/tmp/data/"
 ```
 
-Run inside the root of this project:
+Both argument can be combined.
 ```
-mvn package
+mvn package -DautPath="/tmp/rcp/trace-compass/" -DdataPath="/tmp/data"
 ```
 
 Maven will take care of all necessary dependencies and run the pre-selected test
@@ -41,12 +30,11 @@ suites.
 
 Results will be located under ./target.
 
-### CI maven run 
-#### Jenkins
+### Via RCPTT
 
-Test can be run on a Jenkins instance by using the pom-jenkins.xml.
+Add an AUT (Application Under Test) [More detail here](https://www.eclipse.org/rcptt/documentation/userguide/getstarted/).
 
-The local Data should be placed under $WORKSPACE/Data.
+If you are not using the default path make sure to pass the correct arguments to
+the AUT in the run configurations.
 
-The trace-compass rcp (fully extracted) should be placed under
-$WORKSPACE/rcp/trace-compass.
+![](http://i.imgur.com/XH02fa9.png)
