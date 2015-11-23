@@ -6,11 +6,11 @@ Element-Type: context
 Element-Version: 2.0
 Id: _P_dMII_MEeWoZ73dvYVv8A
 Runtime-Version: 2.0.2.201511100828
-Save-Time: 11/23/15 12:01 PM
+Save-Time: 11/23/15 4:17 PM
 
 ------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998
 Content-Type: text/ecl
 Entry-Name: .ecl.context
 
-global [val data_path [substitute-variables "${system_property:data_path}"]]
+global [val data_path [substitute-variables "${system_property:dataPath}"]]
 ------=_.ecl.context-718f04b4-ed39-33e3-af62-0995e4561998--
