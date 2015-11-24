@@ -37,7 +37,7 @@ Add an AUT (Application Under Test) [More detail here](https://www.eclipse.org/r
 If you are not using the default path make sure to pass the correct arguments to
 the AUT in the run configurations.
 
-![](http://i.imgur.com/XH02fa9.png)
+![](http://i.imgur.com/J4ohsPE.png)
 
 ## Development
 
