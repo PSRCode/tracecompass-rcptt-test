@@ -26,12 +26,14 @@ set-dialog-result Folder [format "%s/invalid_static_trace_1/" $data_path]
 get-window "Trace Import" | get-button "Browse..." | click
 with [get-window "Trace Import"] {
     with [get-tree] {
-        get-item "invalid_static_trace_1" | check
-        select "invalid_static_trace_1"
+        get-item "invalid_static_trace_1/kernel" | check
+        select "invalid_static_trace_1/kernel"
     }
     get-button Finish | click
 }
-
-get-view "Project Explorer" | get-tree | select "Tracing/Traces \\[1\\]/kernel" | double-click
+with [get-view "Project Explorer" | get-tree] {
+    select "Tracing/Traces \\[1\\]" | double-click
+    select "Tracing/Traces \\[1\\]/kernel" | double-click
+}
 get-window "Open Trace" | get-button OK | click
 ------=_.content-0a7243a0-75d3-3d5f-9791-539de0e5b7ac--
