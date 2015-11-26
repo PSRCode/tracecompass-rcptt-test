@@ -1,0 +1,16 @@
+--- RCPTT testcase ---
+Format-Version: 1.0
+Element-Name: open_trace_static
+Element-Type: testsuite
+Element-Version: 2.0
+Id: _vjjDoJRvEeWALc2lld1Yng
+Runtime-Version: 2.1.0.201511240016
+Save-Time: 11/26/15 1:59 PM
+
+------=_testcase-items-62c497da-4241-31f4-811a-6b453a3ecff8
+Content-Type: text/testcase
+Entry-Name: testcase-items
+
+_lvJCAJO5EeW2QYR2dAdQJA	// kind: 'test' name: 'open_ivalid_trace_static_1' path: '../tests/open_ivalid_trace_static_1.test'
+
+------=_testcase-items-62c497da-4241-31f4-811a-6b453a3ecff8--

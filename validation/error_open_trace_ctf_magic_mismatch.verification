@@ -24,8 +24,5 @@ Entry-Name: .errorlog.verification
 
 REQUIRED:
 4 0 org.eclipse.tracecompass.tmf.ui Message:Error initializing trace.  org.eclipse.tracecompass.tmf.core.exceptions.TmfTraceException: CTF magic mismatch
-4 0 org.eclipse.tracecompass.tmf.ui Message:Error initializing trace.  org.eclipse.tracecompass.tmf.core.exceptions.TmfTraceException: CTF magic mismatch
-ALLOWED:
-4 0 org.eclipse.rcptt.ecl.core Message:There is no open report node for command close
 
 ------=_.errorlog.verification-3ceb5b18-8b7c-3939-9191-416e6e78eb57--
